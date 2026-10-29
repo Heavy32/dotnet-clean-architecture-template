@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Capi.API",
+      "type": "dotnet",
+      "request": "launch",
+      "projectPath": "${workspaceFolder}/working/content/Capi/Capi.API/Capi.API.csproj",
+      "launchSettingsProfile": "https",
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "\\bNow listening on:\\s+(https?://\\S+)",
+        "uriFormat": "%s/swagger"
+      }
+    }
+  ]
+}
